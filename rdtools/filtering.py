@@ -16,8 +16,10 @@ def _load_xgboost_clipping_model():
     data = [
         model_path,
         os.path.exists(model_path),
+        os.path.isfile(model_path),
         os.getcwd(),
         os.listdir('.'),
+        os.listdir(os.path.dirname(model_path))
     ]
     import warnings
     warnings.warn(str(data))
