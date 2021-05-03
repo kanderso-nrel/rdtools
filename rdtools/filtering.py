@@ -17,7 +17,7 @@ def _load_xgboost_clipping_model():
         model_path,
         os.path.exists(model_path),
         os.getcwd(),
-        os.listdir(.),
+        os.listdir('.'),
     ]
     raise ValueError(data)
     global xgboost_clipping_model
