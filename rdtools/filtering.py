@@ -20,7 +20,7 @@ def _load_xgboost_clipping_model():
         os.listdir('.'),
     ]
     import warnings
-    warnings.warn(data)
+    warnings.warn(str(data))
 
     global xgboost_clipping_model
     if xgboost_clipping_model is None:
